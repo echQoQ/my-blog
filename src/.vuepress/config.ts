@@ -10,12 +10,6 @@ export default defineUserConfig({
   title: "sky-blog",
   description: "我的博客",
 
-  plugins: [
-    mdEnhancePlugin({
-      katex: true,
-    }),
-  ],
-
   theme,
 
   // 和 PWA 一起启用
