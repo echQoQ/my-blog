@@ -4,7 +4,7 @@ import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
+  base: "/my-blog/",
 
   lang: "zh-CN",
   title: "sky-blog",
