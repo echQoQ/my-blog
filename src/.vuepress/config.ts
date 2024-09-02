@@ -1,13 +1,20 @@
 import { defineUserConfig } from "vuepress";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/my-blog/",
+  base: "/",
 
   lang: "zh-CN",
-  title: "博客演示",
-  description: "vuepress-theme-hope 的博客演示",
+  title: "sky-blog",
+  description: "我的博客",
+
+  plugins: [
+    mdEnhancePlugin({
+      katex: true,
+    }),
+  ],
 
   theme,
 
