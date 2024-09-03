@@ -1,5 +1,5 @@
 {
-  "name": "sky",
+  "name": "fancxx",
   "description": "A project of vuepress-theme-hope",
   "version": "1.0.0",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "katex": "^0.16.11",
     "vue": "^3.4.31",
     "vuepress": "2.0.0-rc.14",
+    "vuepress-plugin-search-pro": "^2.0.0-rc.52",
     "vuepress-theme-hope": "2.0.0-rc.52"
   }
 }

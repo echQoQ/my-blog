@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
@@ -23,7 +24,7 @@ export default hopeTheme({
   navbar,
 
   // 侧边栏
-  sidebar,
+  //sidebar,
 
   // 页脚
   footer: "页脚放啥呢",
@@ -32,13 +33,19 @@ export default hopeTheme({
   // 博客相关
   blog: {
     description: "一个人",
-    intro: "/intro.html",
+    //intro: "/intro.html",
     medias: {
       VuePressThemeHope: {
         icon: "https://theme-hope-assets.vuejs.press/logo.svg",
         link: "https://theme-hope.vuejs.press",
       },
     },
+    articleInfo: [
+      "Author",
+      "Category",
+      'Date',
+      'Tag'
+    ]
   },
 
   // 加密配置
@@ -59,6 +66,8 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+
+    
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
