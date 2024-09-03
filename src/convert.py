@@ -2,7 +2,7 @@ import re
 import os
 import shutil
 
-def modify_links_in_file(file_path, source_dir, target_dir):
+def modify_links_in_file(file_path, nxt_dir,source_dir, target_dir):
     # 检查目标目录是否存在，如果不存在则创建
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
@@ -29,7 +29,7 @@ def modify_links_in_file(file_path, source_dir, target_dir):
             print(f'Copied and renamed {original_file_path} to {target_file_path}')
             
             # 修改文件中的链接
-            content = content.replace(f'![[Pasted image {link}.png]]', f'![]({f"/images/{link}.png"})')
+            content = content.replace(f'![[Pasted image {link}.png]]', f'![]({f"{nxt_dir}{link}.png"})')
         else:
             print(f'File not found: {original_file_path}')
     
@@ -39,6 +39,7 @@ def modify_links_in_file(file_path, source_dir, target_dir):
 
 current_dir = os.getcwd()
 files = [f for f in os.listdir(current_dir) if os.path.isfile(os.path.join(current_dir, f))]
+nxt_dir =  "/images/"
 
 source_dir = 'D:\\\\文档\\HackerNote\\附件'  # 替换为源目录路径
 target_dir = 'D:\\\\MY-BLOG\\my-blog\\src\\.vuepress\\public\\images'  # 替换为目标目录路径
@@ -46,4 +47,4 @@ target_dir = 'D:\\\\MY-BLOG\\my-blog\\src\\.vuepress\\public\\images'  # 替换�
 # 执行函数
 
 for fp in files:
-    modify_links_in_file(fp, source_dir, target_dir)
+    modify_links_in_file(fp, nxt_dir,source_dir, target_dir)
