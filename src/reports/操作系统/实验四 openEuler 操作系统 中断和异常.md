@@ -126,7 +126,9 @@ clean:
 insmod interrupt_example.ko irq=2 devname="interrupt_device2" 
 ```
 
-出现报错![](/images/20240503225413.png)
+出现报错
+
+![](/images/20240503225413.png)
 ![](/images/20240503231615.png)
 
 操作不被接受，可以猜测2号中断是保留中断，不能注册
@@ -140,7 +142,10 @@ insmod interrupt_example.ko irq=2 devname="interrupt_device2"
 
 编写`tasklet_reader_process.c`和Makefile，在附件的exp4/3目录下
 
-编译并导入内核![](/images/20240503231845.png)
+编译并导入内核
+
+![](/images/20240503231845.png)
+
 查看消息日志如下（绝对路径）
 
 ![](/images/20240503231712.png)
@@ -150,6 +155,7 @@ insmod interrupt_example.ko irq=2 devname="interrupt_device2"
 使用绝对路径时如上所示，读取文件正常
 
 当用相对路径时读取文件失败，读取失败，出现这个：
+
 ![](/images/20240503232503.png)
 
 <font color="#e36c09">分析失败原因</font>
