@@ -2,7 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+//import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://fancxx.github.io",
