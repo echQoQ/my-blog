@@ -1,6 +1,6 @@
 {
-  "name": "fancxx",
-  "description": "fancxx 的 博客",
+  "name": "ech0o0",
+  "description": "Mr.Liu 的 博客",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.18",
-    "@vuepress/plugin-comment": "^2.0.0-rc.62",
+    "@vuepress/plugin-comment": "2.0.0-rc.62",
     "@waline/client": "^3.4.1",
     "katex": "^0.16.11",
     "sass-embedded": "^1.82.0",

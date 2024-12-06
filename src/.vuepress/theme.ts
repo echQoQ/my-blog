@@ -8,8 +8,8 @@ export default hopeTheme({
   hostname: "https://echqoq.github.io/my-blog",
 
   author: {
-    name: "Fancxx",
-    url: "https://github.com/fancxx",
+    name: "Kyoma",
+    url: "https://github.com/echqoq",
   },
 
   favicon: "/logo.ico",
@@ -18,7 +18,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "fancxx/my-blog",
+  repo: "echqoq/my-blog",
 
   docsDir: "src",
 
