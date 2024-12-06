@@ -1,5 +1,4 @@
 import { defineUserConfig } from "vuepress";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 import theme from "./theme.js";
 
@@ -13,9 +12,6 @@ export default defineUserConfig({
   theme,
 
   plugins: [
-    searchProPlugin({
-      // your options
-    }),
   ],
 
   // 和 PWA 一起启用

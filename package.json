@@ -11,11 +11,14 @@
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.14",
+    "@vuepress/bundler-vite": "2.0.0-rc.18",
+    "@vuepress/plugin-comment": "^2.0.0-rc.62",
+    "@waline/client": "^3.4.1",
     "katex": "^0.16.11",
-    "vue": "^3.4.31",
-    "vuepress": "2.0.0-rc.14",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.52",
-    "vuepress-theme-hope": "2.0.0-rc.52"
+    "sass-embedded": "^1.82.0",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.18",
+    "vuepress-plugin-search-pro": "2.0.0-rc.59",
+    "vuepress-theme-hope": "2.0.0-rc.59"
   }
 }
